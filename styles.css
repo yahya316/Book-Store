@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav {
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+  transition: color 0.3s ease;
+}
+
+button, a.bg-yellow-400, a.bg-green-600, a.bg-indigo-600, button.bg-red-600 {
+  transition: all 0.3s ease;
+}
+
+input, select {
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(50px); }
+  100% { transform: translateY(0); }
+}
+
+.shadow-lg:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, #e0e7ff, #bfdbfe);
+}
+
+.cart-item {
+  transition: background-color 0.3s ease;
+}
+
+.cart-item img {
+  border-radius: 0.5rem;
+}
+
+.quantity-input {
+  width: 4rem;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.quantity-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+
+.checkout-section {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.checkout-section input, .checkout-section select {
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  transition: border-color 0.3s ease;
+}
+
+.checkout-section input:focus, .checkout-section select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.5);
+}
+
+input:invalid {
+  border-color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookHaven - Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gradient-to-br from-indigo-50 to-blue-100">
+  <!-- Navigation -->
+  <nav class="bg-indigo-800 text-white p-4 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold tracking-tight">BookHaven</h1>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a></li>
+        <li><a href="shop.html" class="hover:text-yellow-300 transition duration-300">Shop</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 transition duration-300">About Us</a></li>
+        <li><a href="cart.html" class="hover:text-yellow-300 transition duration-300">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-[600px] animate-fade-in">
+    <img src="img.jpg" alt="Book Banner" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-5xl font-bold mb-4 animate-slide-up">Discover Your Next Adventure</h2>
+        <p class="text-xl mb-6">Explore thousands of books from every genre.</p>
+        <a href="shop.html" class="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 transform hover:scale-105">Shop New Arrivals</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Books -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-900">Featured Books</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-64 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-indigo-800">The Starless Sea</h3>
+        <p class="text-gray-600">Erin Morgenstern</p>
+        <p class="text-gray-700 mt-2">Dive into a magical world of secret libraries and hidden stories that weave a mesmerizing tale.</p>
+        <a href="product.html" class="text-indigo-600 hover:underline mt-4 inline-block">View Details</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-64 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-indigo-800">Project Hail Mary</h3>
+        <p class="text-gray-600">Andy Weir</p>
+        <p class="text-gray-700 mt-2">A thrilling sci-fi adventure about a lone astronaut’s mission to save humanity.</p>
+        <a href="product.html" class="text-indigo-600 hover:underline mt-4 inline-block">View Details</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-64 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-indigo-800">The Midnight Library</h3>
+        <p class="text-gray-600">Matt Haig</p>
+        <p class="text-gray-700 mt-2">Explore infinite lives in this heartfelt story of choices and second chances.</p>
+        <a href="product.html" class="text-indigo-600 hover:underline mt-4 inline-block">View Details</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-64 object-cover mb-4 rounded">
+        <h3 class="text-2xl font-semibold text-indigo-800">Dune</h3>
+        <p class="text-gray-600">Frank Herbert</p>
+        <p class="text-gray-700 mt-2">A timeless sci-fi epic of power, betrayal, and destiny on a desert planet.</p>
+        <a href="product.html" class="text-indigo-600 hover:underline mt-4 inline-block">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="container mx-auto py-12 bg-white rounded-xl shadow-lg">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-900">New Arrivals</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="bg-gray-50 p-4 rounded-lg shadow transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-40 object-cover rounded">
+        <p class="text-center text-sm mt-2 text-indigo-800">The Last Story</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg shadow transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-40 object-cover rounded">
+        <p class="text-center text-sm mt-2 text-indigo-800">Echoes of Time</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg shadow transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-40 object-cover rounded">
+        <p class="text-center text-sm mt-2 text-indigo-800">Whispers in the Dark</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg shadow transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-40 object-cover rounded">
+        <p class="text-center text-sm mt-2 text-indigo-800">The Hidden Path</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg shadow transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-40 object-cover rounded">
+        <p class="text-center text-sm mt-2 text-indigo-800">Starlit Dreams</p>
+      </div>
+      <div class="bg-gray-50 p-4 rounded-lg shadow transform hover:scale-105 transition duration-300 animate-fade-in-up">
+        <img src="img.jpg" alt="Book Cover" class="w-full h-40 object-cover rounded">
+        <p class="text-center text-sm mt-2 text-indigo-800">The Forgotten Realm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Genre -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-900">Shop by Genre</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+      <a href="shop.html?genre=fiction" class="bg-indigo-100 p-6 rounded-lg text-center hover:bg-indigo-200 transition duration-300 transform hover:scale-105 animate-fade-in-up">
+        <img src="img.jpg" alt="Fiction Icon" class="mx-auto mb-2 h-16 w-16 object-cover rounded">
+        <p class="text-indigo-800 font-semibold">Fiction</p>
+      </a>
+      <a href="shop.html?genre=mystery" class="bg-indigo-100 p-6 rounded-lg text-center hover:bg-indigo-200 transition duration-300 transform hover:scale-105 animate-fade-in-up">
+        <img src="img.jpg" alt="Mystery Icon" class="mx-auto mb-2 h-16 w-16 object-cover rounded">
+        <p class="text-indigo-800 font-semibold">Mystery</p>
+      </a>
+      <a href="shop.html?genre=scifi" class="bg-indigo-100 p-6 rounded-lg text-center hover:bg-indigo-200 transition duration-300 transform hover:scale-105 animate-fade-in-up">
+        <img src="img.jpg" alt="Sci-Fi Icon" class="mx-auto mb-2 h-16 w-16 object-cover rounded">
+        <p class="text-indigo-800 font-semibold">Sci-Fi</p>
+      </a>
+      <a href="shop.html?genre=children" class="bg-indigo-100 p-6 rounded-lg text-center hover:bg-indigo-200 transition duration-300 transform hover:scale-105 animate-fade-in-up">
+        <img src="img.jpg" alt="Children's Icon" class="mx-auto mb-2 h-16 w-16 object-cover rounded">
+        <p class="text-indigo-800 font-semibold">Children's</p>
+      </a>
+      <a href="shop.html?genre=romance" class="bg-indigo-100 p-6 rounded-lg text-center hover:bg-indigo-200 transition duration-300 transform hover:scale-105 animate-fade-in-up">
+        <img src="img.jpg" alt="Romance Icon" class="mx-auto mb-2 h-16 w-16 object-cover rounded">
+        <p class="text-indigo-800 font-semibold">Romance</p>
+      </a>
+      <a href="shop.html?genre=nonfiction" class="bg-indigo-100 p-6 rounded-lg text-center hover:bg-indigo-200 transition duration-300 transform hover:scale-105 animate-fade-in-up">
+        <img src="img.jpg" alt="Non-fiction Icon" class="mx-auto mb-2 h-16 w-16 object-cover rounded">
+        <p class="text-indigo-800 font-semibold">Non-fiction</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Promotional Section -->
+  <section class="container mx-auto py-12 bg-indigo-800 text-white rounded-xl shadow-lg">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-4 animate-slide-up">Join Our Book Club</h2>
+      <p class="text-xl mb-6 max-w-2xl mx-auto">Get exclusive discounts, early access to new releases, and monthly book recommendations by joining our community of book lovers.</p>
+      <a href="#" class="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 transform hover:scale-105">Sign Up Now</a>
+    </div>
+  </section>
+
+  <!-- About Us Snippet -->
+  <section class="container mx-auto py-12 bg-white rounded-xl shadow-lg">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-900">About Us</h2>
+    <p class="text-center max-w-3xl mx-auto text-gray-700">BookHaven is your gateway to a world of stories. Since 2020, we’ve been dedicated to curating a diverse collection of books that inspire, entertain, and educate. Our team of book enthusiasts is committed to helping you find your next great read. <a href="about.html" class="text-indigo-600 hover:underline">Learn more about our journey</a>.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-800 text-white p-6 text-center">
+    <p class="text-lg">© 2025 BookHaven. All rights reserved.</p>
+    <p class="mt-2"><a href="mailto:support@bookhaven.com" class="hover:text-yellow-300 transition duration-300">support@bookhaven.com</a> | <a href="about.html" class="hover:text-yellow-300 transition duration-300">About Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

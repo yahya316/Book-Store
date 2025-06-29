@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookHaven - Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gradient-to-br from-indigo-50 to-blue-100">
+  <!-- Navigation -->
+  <nav class="bg-indigo-800 text-white p-4 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold tracking-tight">BookHaven</h1>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-yellow-300 transition duration-300">Home</a></li>
+        <li><a href="shop.html" class="hover:text-yellow-300 transition duration-300">Shop</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 transition duration-300">About Us</a></li>
+        <li><a href="cart.html" class="hover:text-yellow-300 transition duration-300">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Shop Page -->
+  <section class="container mx-auto py-12 flex animate-fade-in">
+    <!-- Sidebar Filters -->
+    <aside class="w-1/4 pr-8">
+      <h2 class="text-3xl font-bold mb-6 text-indigo-900">Filters</h2>
+      <div class="bg-white p-6 rounded-xl shadow-lg animate-fade-in-up">
+        <h3 class="font-semibold text-lg mb-2">Genre</h3>
+        <label class="block"><input type="checkbox" class="mr-2 accent-indigo-600" name="genre" value="Fiction"> Fiction</label>
+        <label class="block"><input type="checkbox" class="mr-2 accent-indigo-600" name="genre" value="Non-fiction"> Non-fiction</label>
+        <label class="block"><input type="checkbox" class="mr-2 accent-indigo-600" name="genre" value="Mystery"> Mystery</label>
+        <label class="block"><input type="checkbox" class="mr-2 accent-indigo-600" name="genre" value="Romance"> Romance</label>
+        <label class="block"><input type="checkbox" class="mr-2 accent-indigo-600" name="genre" value="Sci-Fi"> Sci-Fi</label>
+      </div>
+      <div class="mt-6 bg-white p-6 rounded-xl shadow-lg animate-fade-in-up">
+        <h3 class="font-semibold text-lg mb-2">Author</h3>
+        <input type="text" placeholder="Search by author" class="w-full p-3 border rounded-lg focus:border-indigo-600 transition duration-300" id="author-filter">
+      </div>
+      <div class="mt-6 bg-white p-6 rounded-xl shadow-lg animate-fade-in-up">
+        <h3 class="font-semibold text-lg mb-2">Price Range</h3>
+        <div class="flex space-x-2">
+          <input type="number" placeholder="Min" class="w-1/2 p-3 border rounded-lg focus:border-indigo-600 transition duration-300" id="price-min">
+          <input type="number" placeholder="Max" class="w-1/2 p-3 border rounded-lg focus:border-indigo-600 transition duration-300" id="price-max">
+        </div>
+      </div>
+      <div class="mt-6 bg-white p-6 rounded-xl shadow-lg animate-fade-in-up">
+        <h3 class="font-semibold text-lg mb-2">Sort By</h3>
+        <select class="w-full p-3 border rounded-lg focus:border-indigo-600 transition duration-300" id="sort-by">
+          <option value="newest">Newest First</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </div>
+      <button class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105 w-full mt-6" id="apply-filters">Apply Filters</button>
+    </aside>
+
+    <!-- Book Listings -->
+    <div class="w-3/4">
+      <h2 class="text-4xl font-bold mb-8 text-indigo-900">Our Books</h2>
+      <div id="book-listings" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up book-item" data-genre="Fiction" data-author="Erin Morgenstern" data-price="14.99">
+          <a href="product-starless-sea.html"><img src="img.jpg" alt="The Starless Sea Cover" class="w-full h-64 object-cover mb-4 rounded"></a>
+          <h3 class="text-2xl font-semibold text-indigo-800">The Starless Sea</h3>
+          <p class="text-gray-600">Erin Morgenstern</p>
+          <p class="text-gray-700 font-bold">$14.99</p>
+          <a href="product-starless-sea.html" class="text-indigo-600 hover:underline mt-2 inline-block">View Details</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up book-item" data-genre="Sci-Fi" data-author="Andy Weir" data-price="16.99">
+          <a href="product-hail-mary.html"><img src="img.jpg" alt="Project Hail Mary Cover" class="w-full h-64 object-cover mb-4 rounded"></a>
+          <h3 class="text-2xl font-semibold text-indigo-800">Project Hail Mary</h3>
+          <p class="text-gray-600">Andy Weir</p>
+          <p class="text-gray-700 font-bold">$16.99</p>
+          <a href="product-hail-mary.html" class="text-indigo-600 hover:underline mt-2 inline-block">View Details</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up book-item" data-genre="Fiction" data-author="Matt Haig" data-price="12.99">
+          <a href="product-midnight-library.html"><img src="img.jpg" alt="The Midnight Library Cover" class="w-full h-64 object-cover mb-4 rounded"></a>
+          <h3 class="text-2xl font-semibold text-indigo-800">The Midnight Library</h3>
+          <p class="text-gray-600">Matt Haig</p>
+          <p class="text-gray-700 font-bold">$12.99</p>
+          <a href="product-midnight-library.html" class="text-indigo-600 hover:underline mt-2 inline-block">View Details</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up book-item" data-genre="Sci-Fi" data-author="Frank Herbert" data-price="19.99">
+          <a href="product-dune.html"><img src="img.jpg" alt="Dune Cover" class="w-full h-64 object-cover mb-4 rounded"></a>
+          <h3 class="text-2xl font-semibold text-indigo-800">Dune</h3>
+          <p class="text-gray-600">Frank Herbert</p>
+          <p class="text-gray-700 font-bold">$19.99</p>
+          <a href="product-dune.html" class="text-indigo-600 hover:underline mt-2 inline-block">View Details</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up book-item" data-genre="Fiction" data-author="Madeline Miller" data-price="15.99">
+          <a href="product-circe.html"><img src="img.jpg" alt="Circe Cover" class="w-full h-64 object-cover mb-4 rounded"></a>
+          <h3 class="text-2xl font-semibold text-indigo-800">Circe</h3>
+          <p class="text-gray-600">Madeline Miller</p>
+          <p class="text-gray-700 font-bold">$15.99</p>
+          <a href="product-circe.html" class="text-indigo-600 hover:underline mt-2 inline-block">View Details</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-fade-in-up book-item" data-genre="Fiction" data-author="Fredrik Backman" data-price="13.99">
+          <a href="product-anxious-people.html"><img src="img.jpg" alt="Anxious People Cover" class="w-full h-64 object-cover mb-4 rounded"></a>
+          <h3 class="text-2xl font-semibold text-indigo-800">Anxious People</h3>
+          <p class="text-gray-600">Fredrik Backman</p>
+          <p class="text-gray-700 font-bold">$13.99</p>
+          <a href="product-anxious-people.html" class="text-indigo-600 hover:underline mt-2 inline-block">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-800 text-white p-6 text-center">
+    <p class="text-lg">© 2025 BookHaven. All rights reserved.</p>
+    <p class="mt-2"><a href="mailto:support@bookhaven.com" class="hover:text-yellow-300 transition duration-300">support@bookhaven.com</a> | <a href="about.html" class="hover:text-yellow-300 transition duration-300">About Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
